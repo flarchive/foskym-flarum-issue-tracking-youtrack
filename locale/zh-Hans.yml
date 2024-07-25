@@ -1,0 +1,23 @@
+foskym-issue-tracking-youtrack:
+  admin:
+    fields:
+      heading: "问题跟踪：YouTrack"
+      url_label: YouTrack 地址
+      token_label: YouTrack 令牌
+      project_label: YouTrack 项目 ID
+      state_field_label: 状态字段
+      resolved_state_label: 已解决状态
+
+      url_help: "您的 YouTrack 实例的 URL。例如：https://example.youtrack.cloud/"
+      token_help: "YouTrack API 的永久令牌。您可以在您的 YouTrack 个人资料设置中创建一个。"
+      project_help: "您想要跟踪的项目的 ID。您可以在项目页面的 URL 中找到它。"
+      state_field_help: |
+        您的 YouTrack 项目中表示问题状态的字段的名称。
+        它将用于确定问题的进度。
+        变量 [Resolved_State] 将被替换为已解决状态字段的值。
+        例如：Submitted,Open|Reopened,To be discussed,In Progress,[Resolved_State]
+      resolved_state_help: |
+        表示已解决问题的状态字段的值。
+        例如：Done|Fixed|Resolved
+
+  forum:
