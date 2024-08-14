@@ -1,0 +1,30 @@
+foskym-issue-tracking-youtrack:
+  # For more details on the format
+  # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
+  admin:
+    fields:
+      heading: "Issue Tracking: YouTrack"
+      url_label: "YouTrack URL"
+      token_label: "YouTrack Token"
+      project_label: "YouTrack Project ID"
+      state_field_label: "State Field"
+      resolved_state_label: "Resolved State"
+      fields_mapping_label: "Fields Mapping"
+
+      url_help: "The URL of your YouTrack instance. Example: https://example.youtrack.cloud/"
+      token_help: "The permanent token for the YouTrack API. You can create one in your YouTrack profile settings."
+      project_help: "The ID of the project you want to track. You can find it in the URL of the project page."
+      state_field_help: |
+        The name of the field in your YouTrack project that represents the state of an issue.
+        It will be used to determine the progress of the issue.
+        The variable [Resolved_State] will be replaced with the value of the Resolved State field.
+        Example: Submitted,Open|Reopened,To be discussed,In Progress,[Resolved_State]
+      resolved_state_help: |
+        The value of the state field that represents a resolved issue.
+        Example: Done|Fixed|Resolved
+      fields_mapping_help: |
+        The mapping of the fields in your YouTrack project's SimpleIssueCustomField to the Normal fields.
+        The format is: SimpleIssueCustomField Name:Normal Field Name
+        Example: Original Author:author.display_name,Original Author Email:author.email,Original Assignee:assignee.display_name
+
+  forum:
